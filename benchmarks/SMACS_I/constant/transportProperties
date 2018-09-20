@@ -1,0 +1,45 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  dev
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+phases (solid liquid);
+
+solid
+{
+    rho         9250.0;
+    Cp          176.0;
+    kappa       17.9;
+    mu          1.1e-3;
+    D           1e-9;
+    
+    DAS         1.85e-4;
+}
+
+liquid
+{
+    rho         9250.0;
+    Cp          176.0;
+    kappa       17.9;
+    mu          1.1e-3;
+    D           1e-9;
+    
+    betaT       1.16e-4;
+    betaC       4.9e-1;
+    TRef        558.638;
+    CRef        0.18;
+}
+
+// ************************************************************************* //

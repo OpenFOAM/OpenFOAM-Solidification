@@ -1,11 +1,11 @@
 #                            -*- mode: org; -*-
 #
-#+TITLE:            README for [[http://openfoam.org/download/source][OpenFOAM-Solidification]]
+#+TITLE:     README for [[http://openfoam.org/download/source][OpenFOAM-Solidification]]
 #+AUTHOR:               The OpenFOAM Foundation
-#+DATE:                     25th September 2018
+#+DATE:                     15th September 2018
 #+LINK:                  http://openfoam.org
 #+OPTIONS: author:nil ^:{}
-# Copyright (c) 2018 OpenFOAM Foundation.
+# Copyright (c) 2016 OpenFOAM Foundation.
 
 * About OpenFOAM
   OpenFOAM is a free, open source computational fluid dynamics (CFD) software
@@ -24,25 +24,25 @@
   License terms under which you can copy the files.
 
 * Solidification Developments
-  This repository contains developments for modeling columnar solidification of
-  binary alloys contributed by John Coleman at Purdue University to the OpenFOAM
-  Foundation that are being evaluated and not yet included the main OpenFOAM-dev
-  repository.
+  This repository contains developments for modeling columnar solidification of 
+  binary alloys contributed by John Coleman and Dr. Matthew J.M. Krane
+  at Purdue University to the OpenFOAM Foundation. These contributions are being 
+  evaluated and not yet included the main OpenFOAM-dev repository.
 
-  This work includes a solver based on the continuum mixture theory presented
-  in:
-
-  W.D. Bennon and F.P. Incropera,
-  "A continuum model for momentum, heat and species transport
-  in binary solid-liquid phase change systems - 1. Model formulation",
-  IJHMT 30 (1987) 2161-2170.
-
+  This work includes a solver based on the continuum mixture theory taken from:
+  
+  "W.D. Bennon and F.P. Incropera, "A continuum model for momentum, heat and
+  species transport in binary solid-liquid phase change systems - 1. Model
+  formulation", IJHMT 30 (1987) 2161-2170.
+  
   as well as a test case for the well-known SMACS numerical benchmark:
-
+  
   [[http://benchmark-solidification.ijl.univ-lorraine.fr]]
-
-  | [[solidificationFoam/README.org][Solidification solver]] | Updated verions of the solidification solver     |
-  | [[benchmarks/SMACS/README.org][SMACS Benchmarks]]      | Tutorial case for the SCMACS numerical benchmark |
+  
+  
+  | [[solidificationFoam/README.org][Solidification solver]] | Updated verions of the solidification solver |
+  | [[benchmarks/SMACS/README.org][SMACS Benchmarks]] | Tutorial case for the SMACS numerical benchmark |
 
 * [[http://OpenFOAM.org/bugs][Reporting bugs in OpenFOAM]]
+
 * [[http://openfoam.org/contact][Contacting the OpenFOAM Foundation]]
