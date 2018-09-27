@@ -40,8 +40,8 @@
   [[http://benchmark-solidification.ijl.univ-lorraine.fr]]
   
   
-  | [[solidificationFoam/README.org][Solidification solver]] | Updated verions of the solidification solver |
-  | [[benchmarks/SMACS/README.org][SMACS Benchmarks]] | Tutorial case for the SMACS numerical benchmark |
+  | [[applications/solvers/solidificationFoam/README.org][Solidification solver]] | Updated verions of the solidification solver |
+  | [[tutorials/multiphase/solidificationFoam/SMACS_I/README.org][SMACS Benchmarks]] | Tutorial case for the SMACS numerical benchmark |
 
 * [[http://OpenFOAM.org/bugs][Reporting bugs in OpenFOAM]]
 
