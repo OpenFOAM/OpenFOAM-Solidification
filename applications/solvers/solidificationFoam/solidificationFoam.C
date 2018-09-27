@@ -39,7 +39,6 @@ Description
 #include "solidificationSystem.H"
 #include "fvOptions.H"
 #include "pimpleControl.H"
-#include "robinTemperatureFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

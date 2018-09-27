@@ -1,13 +1,13 @@
 {
     // Update mixture density from phase change
     rho = fluid.rho();
-    
+
     volScalarField rAU("rAU", 1.0/UEqn.A());
     surfaceScalarField rAUf("rAUf", fvc::interpolate(rho*rAU));
     volVectorField HbyA(constrainHbyA(rAU*UEqn.H(), U, p_rgh));
-    
+
     surfaceScalarField phig(-rAUf*ghf*fvc::snGrad(rhok)*mesh.magSf());
-       
+
     surfaceScalarField phiHbyA
     (
         "phiHbyA",
@@ -19,12 +19,12 @@
 
     // Update the pressure BCs to ensure flux consistency
     constrainPressure(p_rgh, rho, U, phiHbyA, rAUf, MRF);
-    
+
     while (pimple.correctNonOrthogonal())
     {
         fvScalarMatrix p_rghEqn
         (
-            fvm::laplacian(rAUf, p_rgh) 
+            fvm::laplacian(rAUf, p_rgh)
           ==
             fvc::ddt(rho)
           + fvc::div(phiHbyA)
@@ -45,7 +45,7 @@
             fvOptions.correct(U);
         }
     }
-    
+
     p = p_rgh + rhok*gh;
 
     if (p_rgh.needReference())

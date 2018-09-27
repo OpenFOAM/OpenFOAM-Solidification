@@ -1,8 +1,6 @@
 EXE_INC = \
-    -IBCs \
     -I$(LIB_SRC)/finiteVolume/lnInclude \
     -I$(LIB_SRC)/meshTools/lnInclude \
-    -I$(LIB_SRC)/sampling/lnInclude \
     -I$(LIB_SRC)/transportModels \
     -I$(LIB_SRC)/transportModels/compressible/lnInclude \
     -I$(LIB_SRC)/transportModels/twoPhaseMixture/lnInclude \
@@ -13,7 +11,6 @@ EXE_INC = \
 EXE_LIBS = \
     -lfiniteVolume \
     -lmeshTools \
-    -lsampling \
     -lfvOptions \
     -lcompressibleTransportModels \
     -lturbulenceModels \
