@@ -1,8 +1,8 @@
 /*---------------------------------------------------------------------------*\
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
-   \\    /   O peration     |
-    \\  /    A nd           | Copyright (C) 2014-2015 OpenFOAM Foundation
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Copyright (C) 2018 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -39,7 +39,6 @@ SourceFiles
 #include "twoPhaseMixture.H"
 #include "IOdictionary.H"
 
-
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 namespace Foam
@@ -63,26 +62,26 @@ protected:
 
         dimensionedScalar Cp1_;
         dimensionedScalar Cp2_;
-        
+
         dimensionedScalar kappa1_;
         dimensionedScalar kappa2_;
-                        
+
         dimensionedScalar mu1_;
         dimensionedScalar mu2_;
-        
+
         dimensionedScalar D1_;
         dimensionedScalar D2_;
-        
+
         dimensionedScalar DAS_;
-        
+
         dimensionedScalar betaT_;
         dimensionedScalar betaC_;
-        
+
         dimensionedScalar TRef_;
         dimensionedScalar CRef_;
 
         const volVectorField& U_;
-        
+
 
 public:
 
@@ -116,7 +115,7 @@ public:
         {
             return rho2_;
         };
-        
+
         const dimensionedScalar& Cp1() const
         {
             return Cp1_;
@@ -127,7 +126,7 @@ public:
         {
             return Cp2_;
         };
-        
+
         const dimensionedScalar& kappa1() const
         {
             return kappa1_;
@@ -138,7 +137,7 @@ public:
         {
             return kappa2_;
         };
-        
+
         //- Return const-access to the dispersed-phase dynamic viscosity
         const dimensionedScalar& mu1() const
         {
@@ -162,25 +161,25 @@ public:
         {
             return D2_;
         };
-        
+
         //- Return const-access to dnedrite arm spacing
         const dimensionedScalar& DAS() const
         {
             return DAS_;
         };
-        
+
         //- Return const-access to liquid thermal expansion
         const dimensionedScalar& betaT() const
         {
             return betaT_;
         };
-        
+
         //- Return const-access to liquid solutal expansion
         const dimensionedScalar& betaC() const
         {
             return betaC_;
         };
-        
+
         //- Return const-access to reference temperature
         const dimensionedScalar& TRef() const
         {
@@ -192,7 +191,7 @@ public:
         {
             return CRef_;
         };
-                
+
         //- Return const-access to the mixture velocity
         const volVectorField& U() const
         {
@@ -204,13 +203,13 @@ public:
         {
             return alpha1_*rho1_ + alpha2_*rho2_;
         }
-        
+
         //- Return the mixture density
         virtual tmp<volScalarField> Cp() const
         {
             return alpha1_*Cp1_ + alpha2_*Cp2_;
         }
-        
+
         //- Return the mixture density
         virtual tmp<volScalarField> kappa() const
         {

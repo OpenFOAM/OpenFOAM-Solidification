@@ -12,43 +12,43 @@ IOdictionary thermoProperties
 
 dimensionedScalar Tmelt
 (
-    "Tmelt", 
-    dimTemperature, 
+    "Tmelt",
+    dimTemperature,
     thermoProperties.lookup("Tmelt")
 );
 
 dimensionedScalar Teut
 (
-    "Teut", 
-    dimTemperature, 
+    "Teut",
+    dimTemperature,
     thermoProperties.lookup("Teut")
 );
 
 dimensionedScalar Tiso
 (
-    "Tiso", 
-    dimTemperature, 
+    "Tiso",
+    dimTemperature,
     thermoProperties.lookup("Tiso")
 );
 
 dimensionedScalar Calpha
 (
-    "Calpha", 
-    dimless, 
+    "Calpha",
+    dimless,
     thermoProperties.lookup("Calpha")
 );
 
 dimensionedScalar Ceut
 (
-    "Ceut", 
-    dimless, 
+    "Ceut",
+    dimless,
     thermoProperties.lookup("Ceut")
 );
 
 dimensionedScalar L
 (
-    "L", 
-    dimEnergy/dimMass, 
+    "L",
+    dimEnergy/dimMass,
     thermoProperties.lookup("L")
 );
 
@@ -57,3 +57,8 @@ dimensionedScalar msol = (Teut - Tmelt)/Calpha;
 dimensionedScalar mliq = (Teut - Tmelt)/Ceut;
 
 dimensionedScalar kp = Calpha/Ceut;
+
+const scalar nThermoCorr
+(
+    pimple.dict().lookupOrDefault<scalar>("nThermoCorr", 100)
+);

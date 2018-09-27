@@ -28,10 +28,6 @@ volVectorField U
 
 solidificationSystem fluid(U);
 
-volScalarField& alpha1(fluid.alpha1());
-
-#include "createFieldRefs.H"
-
 Info<< "Reading field T\n" << endl;
 volScalarField T
 (
@@ -85,7 +81,8 @@ volScalarField rhok
         runTime.timeName(),
         mesh
     ),
-    rho2*(1.0 - betaT*(T - TRef) - betaC*(C2 - CRef))
+    fluid.rho2()
+   *(1.0 - fluid.betaT()*(T - fluid.TRef()) - fluid.betaC()*(C2 - fluid.CRef()))
 );
 
 
