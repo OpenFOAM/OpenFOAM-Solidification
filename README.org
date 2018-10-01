@@ -24,25 +24,25 @@
   License terms under which you can copy the files.
 
 * Solidification Developments
-  This repository contains developments for modeling columnar solidification of 
+  This repository contains developments for modeling columnar solidification of
   binary alloys contributed by John Coleman and Dr. Matthew J.M. Krane
-  at Purdue University to the OpenFOAM Foundation. These contributions are being 
+  at Purdue University to the OpenFOAM Foundation. These contributions are being
   evaluated and not yet included the main OpenFOAM-dev repository.
 
   This work includes a solver based on the continuum mixture theory taken from:
-  
+
   "W.D. Bennon and F.P. Incropera, "A continuum model for momentum, heat and
   species transport in binary solid-liquid phase change systems - 1. Model
   formulation", IJHMT 30 (1987) 2161-2170.
-  
+
   as well as a test case for the well-known SMACS numerical benchmark:
-  
   [[http://benchmark-solidification.ijl.univ-lorraine.fr]]
-  
-  
+
   | [[solidificationFoam/README.org][Solidification solver]] | Updated verions of the solidification solver |
   | [[benchmarks/SMACS/README.org][SMACS Benchmarks]] | Tutorial case for the SMACS numerical benchmark |
 
-* [[http://OpenFOAM.org/bugs][Reporting bugs in OpenFOAM]]
-
-* [[http://openfoam.org/contact][Contacting the OpenFOAM Foundation]]
+* [[https://openfoam.org/resources][Documentation]]
+* [[https://cpp.openfoam.org/dev][Source code documentation]]
+* [[https://openfoam.org/dev/coding-style-guide][OpenFOAM C++ Style Guide]]
+* [[https://bugs.openfoam.org][Reporting bugs in OpenFOAM]]
+* [[https://openfoam.org/contact][Contacting the OpenFOAM Foundation]]
