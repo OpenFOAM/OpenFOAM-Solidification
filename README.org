@@ -37,16 +37,9 @@
 
   as well as a test case for the well-known SMACS numerical benchmark:
   [[http://benchmark-solidification.ijl.univ-lorraine.fr]]
-<<<<<<< HEAD
 
-  | [[solidificationFoam/README.org][Solidification solver]] | Updated verions of the solidification solver |
-  | [[benchmarks/SMACS/README.org][SMACS Benchmarks]] | Tutorial case for the SMACS numerical benchmark |
-=======
-  
-  
   | [[applications/solvers/solidificationFoam][Solidification solver]] | Updated verions of the solidification solver |
   | [[tutorials/multiphase/solidificationFoam/SMACS_I][SMACS Benchmarks]] | Tutorial case for the SMACS numerical benchmark |
->>>>>>> 87dbfbbdbbcfcb6a2599095110aa240d6be6c75d
 
 * [[https://openfoam.org/resources][Documentation]]
 * [[https://cpp.openfoam.org/dev][Source code documentation]]
